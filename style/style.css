@@ -33,6 +33,10 @@ header {
     align-items: center;
 }
 
+header h1 {
+    font-size: 4rem;
+}
+
 .nav-list {
     display: flex;
     list-style: none;
@@ -52,8 +56,6 @@ nav {
 
 }
 
-
-
 .sub-menu {
     display: none;
 }
@@ -72,6 +74,11 @@ body {
     color: var(--verde);
 }
 
+main {
+    width: 80%;
+    margin: auto;
+}
+
 main p {
     font-size: 1rem;
     text-indent: 1.5rem;
@@ -86,6 +93,7 @@ footer {
 
 footer a {
     color: black;
+    font-size: 2rem;
 }
 
 footer ul {
@@ -101,6 +109,7 @@ footer ul li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 2rem;
     height: 200px;
     margin-left: 15rem;
 }
