@@ -18,6 +18,8 @@
 a {
     color: black;
     text-decoration: none;
+    padding: 5px;
+    transition: 0.3s;
 }
 
 a:hover {
@@ -29,7 +31,7 @@ a:hover {
     list-style: none;
 }
 
-.nav-list>li {
+.nav-list li {
     margin-left: 10px;
     padding: 5px;
 }
@@ -40,11 +42,12 @@ nav {
     align-items: center;
 }
 
-header>nav>img {
+header nav img {
     max-width: 200px;
     max-height: 200px;
     display: block;
     margin: 10px;
+
 }
 
 .sub-menu {
@@ -57,10 +60,51 @@ nav ul li:hover .sub-menu {
     padding-top: 10px;
 }
 
-#sub-list {
+nav ul li:hover .sub-menu ul {
     flex-direction: column;
 }
 
 body {
     color: var(--verde);
+}
+
+main p {
+    font-size: 1rem;
+    text-indent: 1.5rem;
+    line-height: 2rem;
+}
+
+footer {
+    background-color: black;
+}
+footer a{
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: .3rem;
+    font-size: 2rem;
+}
+
+.menu-roda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    max-width: 20rem;
+    max-width: 20rem;
+}
+
+footer .copy {
+    background-color: var(--verde);
+    color: var(--nudeClaro);
+    padding: 10px;
+    text-align: center;
+    margin-top: -4px;
 }
