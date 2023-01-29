@@ -6,7 +6,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 :root {
@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: green;
+}
+
 .nav-list {
     display: flex;
     list-style: none;
@@ -27,6 +31,7 @@ a {
 
 .nav-list>li {
     margin-left: 10px;
+    padding: 5px;
 }
 
 nav {
@@ -49,6 +54,7 @@ header>nav>img {
 nav ul li:hover .sub-menu {
     display: block;
     position: absolute;
+    padding-top: 10px;
 }
 
 #sub-list {
