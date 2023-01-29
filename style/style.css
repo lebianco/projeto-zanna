@@ -75,10 +75,11 @@ main p {
 }
 
 footer {
-    background-color: black;
+    background-color: var(--nudeClaro);
 }
-footer a{
-    color: white;
+
+footer a {
+    color: black;
 }
 
 footer ul {
