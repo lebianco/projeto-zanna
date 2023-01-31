@@ -11,8 +11,13 @@
 
 :root {
 	--verde: #414C48;
+	--verdeClaro: rgb(0, 200, 0);
 	--nude: #B6A490;
 	--nudeClaro: #EBE6E0;
+}
+
+body {
+	color: var(--verde);
 }
 
 a {
@@ -24,13 +29,13 @@ a {
 }
 
 a:hover {
-	color: green;
+	color: var(--verdeClaro);
 }
 
 header {
 	width: 100%;
 	height: 100px;
-	align-items: center;
+	overflow-x: hidden;
 }
 
 header h1 {
@@ -38,13 +43,69 @@ header h1 {
 }
 
 .nav-list {
-	display: flex;
 	list-style: none;
+	transform: translate(60rem);
+	transition: all 0.5s;
 }
 
 .nav-list li {
+	display: inline;
 	margin-left: 10px;
 	padding: 5px;
+}
+
+menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.btn-menu {
+	background: none;
+	border: none;
+	font: inherit;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding-block: 1rem;
+	cursor: pointer;
+}
+
+.hamburguer {
+	border-top: 0.125rem solid black;
+	width: 1.25rem;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+	content: '';
+	display: block;
+	width: 1.25rem;
+	height: 0.125rem;
+	background: black;
+	margin-top: 0.3125rem;
+	position: relative;
+	transition: 0.3s;
+}
+
+.nav.active .nav-list {
+	transform: translate(0, 0);
+	visibility: visible;
+}
+
+.nav.active .hamburguer {
+	border-top: transparent;
+}
+
+.nav.active .hamburguer::before {
+	background: var(--verdeClaro);
+	transform: rotate(135deg);
+}
+
+.nav.active .hamburguer::after {
+	background: var(--verdeClaro);
+	transform: rotate(-135deg);
+	top: -0.4375rem;
 }
 
 nav {
@@ -54,83 +115,6 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 
-}
-
-.btn-menu {
-	display: none;
-}
-
-
-
-@media (max-width: 600px) {
-	.nav-list {
-		display: block;
-		position: absolute;
-		background: white;
-		text-align: center;
-		top: 6rem;
-		left: 0;
-		width: 100%;
-		height: 0;
-		z-index: 1;
-		overflow-y: hidden;
-		visibility: hidden;
-		transition: 0.5s;
-	}
-
-	.nav-list li {
-		border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-	}
-
-	.btn-menu {
-		background: none;
-		border: none;
-		font: inherit;
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		padding-block: 1rem;
-		cursor: pointer;
-	}
-
-	.hamburguer {
-		border-top: 0.125rem solid black;
-		width: 1.25rem;
-	}
-
-	.hamburguer::before,
-	.hamburguer::after {
-		content: '';
-		display: block;
-		width: 1.25rem;
-		height: 0.125rem;
-		background: black;
-		margin-top: 0.3125rem;
-		position: relative;
-		transition: 0.3s;
-	}
-
-	.nav.active .nav-list {
-		height: calc(100vh - 6rem);
-		visibility: visible;
-	}
-
-	.nav.active .hamburguer {
-		border-top: transparent;
-	}
-
-	.nav.active .hamburguer::before {
-		transform: rotate(135deg);
-	}
-
-	.nav.active .hamburguer::after {
-		transform: rotate(-135deg);
-		top: -0.4375rem;
-	}
-}
-
-body {
-	color: var(--verde);
 }
 
 main {
@@ -148,7 +132,7 @@ main p {
 footer {
 	width: 100%;
 	height: 200px;
-	background-color: var(--nudeClaro);
+	background-color: var(--nude);
 }
 
 footer a {
@@ -213,4 +197,75 @@ footer .copy {
 	padding: 10px;
 	text-align: center;
 	margin-top: -4px;
+}
+
+
+@media (max-width: 600px) {
+	.nav-list {
+		display: block;
+		position: absolute;
+		background: white;
+		text-align: center;
+		top: 6rem;
+		left: 0;
+		width: 100%;
+		height: 0;
+		z-index: 1;
+		overflow-y: hidden;
+		visibility: hidden;
+		transition: 0.5s;
+		transform: translate(0rem, 0rem);
+	}
+
+	.nav-list li {
+		display: block;
+	}
+
+	.btn-menu {
+		background: none;
+		border: none;
+		font: inherit;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding-block: 1rem;
+		cursor: pointer;
+	}
+
+	.hamburguer {
+		border-top: 0.125rem solid black;
+		width: 1.25rem;
+	}
+
+	.hamburguer::before,
+	.hamburguer::after {
+		content: '';
+		display: block;
+		width: 1.25rem;
+		height: 0.125rem;
+		background: black;
+		margin-top: 0.3125rem;
+		position: relative;
+		transition: 0.3s;
+	}
+
+	.nav.active .nav-list {
+		height: calc(100vh - 6rem);
+		visibility: visible;
+	}
+
+	.nav.active .hamburguer {
+		border-top: transparent;
+	}
+
+	.nav.active .hamburguer::before {
+		background: var(--verdeClaro);
+		transform: rotate(135deg);
+	}
+
+	.nav.active .hamburguer::after {
+		background: var(--verdeClaro);
+		transform: rotate(-135deg);
+		top: -0.4375rem;
+	}
 }
