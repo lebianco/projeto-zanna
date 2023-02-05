@@ -2,7 +2,9 @@ const nav = document.querySelector(".nav");
 const btnMenu = document.querySelector(".btn-menu");
 const menu = document.querySelector(".nav-list");
 let slideFirst = document.querySelector(".slide.first");
-var btnLab = document.querySelectorAll(".manual-btn");
+let btnLab = document.querySelectorAll(".manual-btn");
+var slideDesc = document.querySelectorAll(".desc-proj");
+
 
 
 function handleButtonClick(event) {
@@ -32,13 +34,14 @@ function handleClickOutside(targetElement, callBack) {
 	}
 }
 
-function mudaSlide(event, id) {
-	for (let i = 0; i <= btnLab.length; i++) {
+function mudaSlide(event, id, desc) {
+	for (let i = 0; i <= 3; i++) {
 		if (i == id) {
 			btnLab[i].classList.add("ativo");
+			desc[i].classList.add("ativo");
 		} else {
-			console.log(btnLab[i])
 			btnLab[i].classList.remove("ativo");
+			desc[i].classList.remove("ativo");
 		}
 	}
 
@@ -62,11 +65,10 @@ function slideAtual(event, id) {
 }
 
 
-
 btnLab.forEach((event, id) => {
 	event.addEventListener("click", (obj) => {
 		slideAtual(event, id);
-		mudaSlide(event, id);
+		mudaSlide(event, id, slideDesc);
 	});
 });
 btnMenu.addEventListener("click", handleButtonClick);
