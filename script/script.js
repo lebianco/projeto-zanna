@@ -34,7 +34,7 @@ function handleClickOutside(targetElement, callBack) {
 	}
 }
 
-function mudaSlide(event, id, desc) {
+function apontador(event, id, desc) {
 	for (let i = 0; i <= 3; i++) {
 		if (i == id) {
 			btnLab[i].classList.add("ativo");
@@ -47,7 +47,7 @@ function mudaSlide(event, id, desc) {
 
 }
 
-function slideAtual(event, id) {
+function mudaFoto(event, id) {
 	switch (id) {
 		case 0:
 			slideFirst.style.marginLeft = "0";
@@ -67,8 +67,8 @@ function slideAtual(event, id) {
 
 btnLab.forEach((event, id) => {
 	event.addEventListener("click", (obj) => {
-		slideAtual(event, id);
-		mudaSlide(event, id, slideDesc);
+		mudaFoto(event, id);
+		apontador(event, id, slideDesc);
 	});
 });
 btnMenu.addEventListener("click", handleButtonClick);
