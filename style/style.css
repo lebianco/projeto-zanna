@@ -129,7 +129,7 @@ main p {
 }
 
 section {
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 }
 
 section h2 {
@@ -200,7 +200,7 @@ section h2 {
 	height: 35%;
 	background: #ffffff;
 	position: relative;
-	transform: translate(20%, -58%);
+	transform: translate(0%, -58%);
 
 }
 
