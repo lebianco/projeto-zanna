@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
+
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
@@ -9,6 +10,7 @@
 }
 
 :root {
+
 	--verde: #414C48;
 	--verdeClaro: rgb(0, 200, 0);
 	--nude: #B6A490;
@@ -16,10 +18,12 @@
 }
 
 body {
+
 	color: var(--verde);
 }
 
 header {
+
 	width: 90vw;
 	height: 10rem;
 	overflow-x: hidden;
@@ -27,6 +31,7 @@ header {
 }
 
 header a {
+
 	color: black;
 	text-decoration: none;
 	padding: 5px;
@@ -35,11 +40,13 @@ header a {
 }
 
 header a:hover {
+
 	color: var(--verdeClaro);
 }
 
 
 header>nav {
+
 	display: flex;
 	width: 100%;
 	height: 10rem;
@@ -48,28 +55,33 @@ header>nav {
 }
 
 header img {
+
 	max-width: 10rem;
 }
 
 .nav-list {
+
 	list-style: none;
 	transform: translate(60rem);
 	transition: all 0.5s;
 }
 
 .nav-list li {
+
 	display: inline;
 	margin-left: 10px;
 	padding: 5px;
 }
 
 menu {
+
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
 .btn-menu {
+
 	background: none;
 	border: none;
 	font: inherit;
@@ -81,12 +93,14 @@ menu {
 }
 
 .hamburguer {
+
 	border-top: 0.125rem solid black;
 	width: 1.25rem;
 }
 
 .hamburguer::before,
 .hamburguer::after {
+
 	content: '';
 	display: block;
 	width: 1.25rem;
@@ -98,31 +112,37 @@ menu {
 }
 
 .nav.active .nav-list {
+
 	transform: translate(0, 0);
 	visibility: visible;
 }
 
 .nav.active .hamburguer {
+
 	border-top: transparent;
 }
 
 .nav.active .hamburguer::before {
+
 	background: var(--verdeClaro);
 	transform: rotate(135deg);
 }
 
 .nav.active .hamburguer::after {
+
 	background: var(--verdeClaro);
 	transform: rotate(-135deg);
 	top: -0.4375rem;
 }
 
 main {
+
 	width: 80%;
 	margin: auto;
 }
 
 main p {
+
 	font-size: 1rem;
 	text-indent: 2rem;
 	line-height: 2rem;
@@ -130,32 +150,38 @@ main p {
 }
 
 .descrição-escritorio {
+
 	width: 80%;
 	position: relative;
 	left: 20%;
 }
 
 section {
+
 	margin-bottom: 5rem;
 }
 
 section h1 {
+
 	text-align: center;
 	margin: 2rem;
 }
 
 section h2 {
+
 	text-align: center;
 	padding: 1rem;
 	margin: 2rem;
 }
 
 .projetos {
+
 	height: 40rem;
 	position: relative;
 }
 
 .slider {
+
 	transform: translate(40%, -9%);
 	width: 75%;
 	height: 35rem;
@@ -164,6 +190,7 @@ section h2 {
 }
 
 .slides {
+
 	width: 400%;
 	height: 35rem;
 	display: flex;
@@ -171,17 +198,20 @@ section h2 {
 
 
 .slide {
+
 	width: 25%;
 	position: relative;
 }
 
 .slide>img {
+
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
 .manual-navigation {
+
 	position: absolute;
 	width: 100%;
 	display: flex;
@@ -191,6 +221,7 @@ section h2 {
 }
 
 .manual-btn {
+
 	background-color: var(--nude);
 	margin-top: 1rem;
 	padding: 5px;
@@ -199,20 +230,24 @@ section h2 {
 }
 
 .manual-btn.ativo {
+
 	background-color: var(--verde);
 	padding: 6px;
 }
 
 .manual-btn {
+
 	margin-right: 2rem;
 }
 
 .first {
+
 	transition: 0.5s;
 }
 
 .conteiner-desc {
 	width: 40%;
+
 	height: 30%;
 	background: #ffffff;
 	position: relative;
@@ -221,16 +256,19 @@ section h2 {
 }
 
 .desc-proj {
+
 	position: absolute;
 	opacity: 0;
 	transition: opacity 0.3s;
 }
 
 .desc-proj.ativo {
+
 	opacity: 1;
 }
 
 footer {
+
 	display: block;
 	width: 100%;
 	height: 200px;
@@ -238,6 +276,7 @@ footer {
 }
 
 .social-midia {
+
 	display: flex;
 	height: 100%;
 	flex-direction: column;
@@ -246,10 +285,12 @@ footer {
 }
 
 .social-midia>img {
+
 	max-width: 9rem;
 }
 
 .menu-roda {
+
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -258,6 +299,7 @@ footer {
 }
 
 .menu-roda a {
+
 	text-decoration: none;
 	padding: 5px;
 	transition: 0.3s;
@@ -266,19 +308,23 @@ footer {
 }
 
 .menu-roda a:hover {
+
 	color: var(--verdeClaro);
 }
 
 footer ul {
+
 	list-style: none;
 }
 
 footer ul li {
+
 	padding: .3rem;
 	font-size: 2rem;
 }
 
 .menu-roda {
+
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -287,10 +333,12 @@ footer ul li {
 }
 
 .menu-roda h1 {
+
 	margin-bottom: 1rem;
 }
 
 .menu-roda p {
+
 	display: flex;
 	align-items: center;
 	max-width: 10re;
@@ -299,6 +347,7 @@ footer ul li {
 }
 
 .menu-roda i {
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -311,16 +360,19 @@ footer ul li {
 }
 
 .menu-roda i:hover {
+
 	background-color: rgb(0, 63, 0);
 	color: var(--nudeClaro);
 	transition: .5s;
 }
 
 .menu-roda p :not(:first-child) {
+
 	margin-left: 1rem;
 }
 
 footer .copy {
+
 	background-color: var(--verde);
 	color: var(--nudeClaro);
 	font-size: .7rem;
@@ -331,7 +383,9 @@ footer .copy {
 
 
 @media (max-width: 600px) {
+
 	.nav-list {
+
 		display: block;
 		position: absolute;
 		background: white;
@@ -348,10 +402,12 @@ footer .copy {
 	}
 
 	.nav-list li {
+
 		display: block;
 	}
 
 	.btn-menu {
+
 		background: none;
 		border: none;
 		font: inherit;
@@ -363,12 +419,14 @@ footer .copy {
 	}
 
 	.hamburguer {
+
 		border-top: 0.125rem solid black;
 		width: 1.25rem;
 	}
 
 	.hamburguer::before,
 	.hamburguer::after {
+
 		content: '';
 		display: block;
 		width: 1.25rem;
@@ -380,20 +438,24 @@ footer .copy {
 	}
 
 	.nav.active .nav-list {
+
 		height: calc(100vh - 6rem);
 		visibility: visible;
 	}
 
 	.nav.active .hamburguer {
+
 		border-top: transparent;
 	}
 
 	.nav.active .hamburguer::before {
+
 		background: var(--verdeClaro);
 		transform: rotate(135deg);
 	}
 
 	.nav.active .hamburguer::after {
+		
 		background: var(--verdeClaro);
 		transform: rotate(-135deg);
 		top: -0.4375rem;
