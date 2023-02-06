@@ -19,6 +19,13 @@ body {
 	color: var(--verde);
 }
 
+header {
+	width: 90vw;
+	height: 10rem;
+	overflow-x: hidden;
+	margin: 0rem 5rem;
+}
+
 header a {
 	color: black;
 	text-decoration: none;
@@ -31,23 +38,17 @@ header a:hover {
 	color: var(--verdeClaro);
 }
 
-header {
-	width: 90vw;
-	height: 100px;
-	overflow-x: hidden;
-	margin: 0rem 2rem;
-}
 
 header>nav {
 	display: flex;
 	width: 100%;
-	height: 100px;
+	height: 10rem;
 	justify-content: space-around;
 	align-items: center;
 }
 
-header h1 {
-	font-size: 4rem;
+header img {
+	max-width: 10rem;
 }
 
 .nav-list {
@@ -128,30 +129,43 @@ main p {
 	text-align: justify;
 }
 
+.descrição-escritorio {
+	width: 80%;
+	position: relative;
+	left: 20%;
+}
+
 section {
 	margin-bottom: 5rem;
 }
 
+section h1 {
+	text-align: center;
+	margin: 2rem;
+}
+
 section h2 {
 	text-align: center;
-	padding: 3rem;
+	padding: 1rem;
+	margin: 2rem;
 }
 
 .projetos {
-	height: 32rem;
+	height: 40rem;
 	position: relative;
 }
 
 .slider {
-	transform: translate(47%, -9%);
+	transform: translate(40%, -9%);
 	width: 75%;
-	height: 400px;
+	height: 35rem;
+	margin: 4rem 0rem;
 	overflow: hidden;
 }
 
 .slides {
 	width: 400%;
-	height: 400px;
+	height: 35rem;
 	display: flex;
 }
 
@@ -163,6 +177,8 @@ section h2 {
 
 .slide>img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .manual-navigation {
@@ -171,7 +187,7 @@ section h2 {
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	margin-top: -2rem;
+	margin-top: -6rem;
 }
 
 .manual-btn {
@@ -196,22 +212,22 @@ section h2 {
 }
 
 .conteiner-desc {
-	width: 45%;
-	height: 35%;
+	width: 40%;
+	height: 30%;
 	background: #ffffff;
 	position: relative;
-	transform: translate(0%, -58%);
+	transform: translate(0%, -100%);
 
 }
 
 .desc-proj {
 	position: absolute;
-	opacity: 0.01;
+	opacity: 0;
+	transition: opacity 0.3s;
 }
 
 .desc-proj.ativo {
 	opacity: 1;
-	transition: auto 0.5s;
 }
 
 footer {
@@ -221,9 +237,36 @@ footer {
 	background-color: var(--nude);
 }
 
-footer a {
+.social-midia {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-midia>img {
+	max-width: 9rem;
+}
+
+.menu-roda {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: -1rem;
+	height: 200px;
+}
+
+.menu-roda a {
+	text-decoration: none;
+	padding: 5px;
+	transition: 0.3s;
 	color: black;
 	font-size: 2rem;
+}
+
+.menu-roda a:hover {
+	color: var(--verdeClaro);
 }
 
 footer ul {
@@ -250,6 +293,8 @@ footer ul li {
 .menu-roda p {
 	display: flex;
 	align-items: center;
+	max-width: 10re;
+	margin-left: 8px;
 	justify-content: center;
 }
 
