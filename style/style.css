@@ -432,6 +432,11 @@ footer .copy {
 		margin: 0rem;
 	}
 
+	.descrição-escritorio {
+		width: 95%;
+		left: 5%;
+	}
+
 	.nav-list {
 		display: block;
 		position: absolute;
@@ -499,4 +504,52 @@ footer .copy {
 		transform: rotate(-135deg);
 		top: -0.4375rem;
 	}
+
+	.projetos {
+		height: 50rem;
+		position: relative;
+	}
+
+	.slider {
+		transform: translate(3%, -10%);
+		width: 100%;
+		height: 35rem;
+		margin: 4rem 0rem;
+		overflow: hidden;
+	}
+
+	.manual-navigation {
+		justify-content: center;
+	}
+
+	.manual-btn {
+		margin-right: 4rem;
+	}
+
+	.projetos {
+		height: 50rem;
+		position: relative;
+	}
+
+	.slider {
+		transform: translate(3%, -10%);
+		width: 100%;
+		height: 35rem;
+		margin: 4rem 0rem;
+		overflow: hidden;
+	}
+
+	.manual-navigation {
+		justify-content: center;
+	}
+
+	.manual-btn {
+		margin-right: 3rem;
+	}
+
+	.conteiner-desc {
+		width: auto;
+		height: auto;
+	}
+
 }
