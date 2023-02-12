@@ -3,7 +3,7 @@ const btnMenu = document.querySelector(".btn-menu");
 const menu = document.querySelector(".nav-list");
 let slideFirst = document.querySelector(".slide.first");
 let btnLab = document.querySelectorAll(".manual-btn");
-let slideDesc = document.querySelectorAll(".desc-proj");
+var slideDesc = document.querySelectorAll(".desc-proj");
 
 
 
@@ -66,7 +66,7 @@ function mudaFoto(event, id) {
 
 
 btnLab.forEach((event, id) => {
-	event.addEventListener("click", (obj) => {
+	event.addEventListener("click", () => {
 		mudaFoto(event, id);
 		apontador(event, id, slideDesc);
 	});
