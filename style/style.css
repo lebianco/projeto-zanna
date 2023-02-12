@@ -427,6 +427,11 @@ footer .copy {
 		width: 83vw;
 	}
 
+	main {
+		width: 95%;
+		margin: 0rem;
+	}
+
 	.nav-list {
 		display: block;
 		position: absolute;
