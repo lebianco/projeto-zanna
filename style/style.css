@@ -118,7 +118,7 @@ menu {
 }
 
 main {
-	width: 80%;
+	width: 85%;
 	margin: auto;
 }
 
@@ -258,6 +258,7 @@ section img {
 	font-size: 1.3rem;
 	text-decoration: none;
 	margin-left: -1rem;
+	transition: all 0.3s;
 }
 
 .desc-proj.ativo a:hover {
@@ -350,6 +351,7 @@ footer {
 .contato-escritorio a {
 	text-decoration: none;
 	color: black;
+	transition: all 0.3s;
 }
 
 .contato-escritorio a:hover {
