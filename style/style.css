@@ -256,6 +256,7 @@ section img {
 .desc-proj a {
 	display: block;
 	width: 100%;
+	color: black;
 	text-align: right;
 	font-size: 1.3rem;
 	text-decoration: none;
@@ -552,4 +553,32 @@ footer .copy {
 		height: auto;
 	}
 
+	.conteiner {
+		display: block;
+		position: relative;
+		left: 1rem;
+	}
+
+	.ultimos-post {
+		margin-bottom: 2rem;
+	}
+
+	.celular {
+		margin-bottom: 1.5rem;
+	}
+
+	.sess-sociais {
+		text-align: center;
+	}
+
+	.sess-sociais ul {
+		text-align: center;
+		position: relative;
+		top: 1rem;
+	}
+
+	.contato-escritorio {
+		margin-bottom: 2rem;
+		margin-left: 1rem;
+	}
 }
