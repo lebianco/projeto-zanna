@@ -260,7 +260,7 @@ section img {
 	margin-left: -1rem;
 }
 
-.desc-proj a:hover {
+.desc-proj.ativo a:hover {
 	color: var(--verdeClaro);
 }
 
@@ -287,18 +287,9 @@ section img {
 	transition: all 0.3s;
 }
 
-.sess-sociais a::after {
-	content: " ";
-	width: 2rem;
-	height: 1px;
-	background-color: #000000;
-}
-
 .sess-sociais a:hover {
 	color: var(--verdeClaro);
 }
-
-
 
 .conteiner {
 	display: grid;
