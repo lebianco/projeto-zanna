@@ -231,13 +231,15 @@ section img {
 
 .desc-proj {
 	position: absolute;
-	display: none;
+	opacity: 0;
 	transition: opacity 0.3s;
 	padding: 5px;
+	z-index: 1;
 }
 
 .desc-proj.ativo {
-	display: block;
+	z-index: 2;
+	opacity: 1;
 }
 
 .desc-proj h3 {
