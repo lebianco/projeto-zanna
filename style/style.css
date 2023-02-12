@@ -349,7 +349,7 @@ footer {
 }
 
 .menu-roda a:hover {
-	color: rgb(0, 150, 0);
+	color: var(--nudeClaro);
 }
 
 footer ul {
