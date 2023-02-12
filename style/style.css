@@ -167,6 +167,16 @@ section h1 {
 	margin: 2rem;
 }
 
+section h1::after {
+	content: '';
+	background-color: var(--verde);
+	display: block;
+	width: 1.25rem;
+	height: 0.125rem;
+	background: black;
+	margin-top: 0.3125rem;
+}
+
 section h2 {
 
 	text-align: center;
@@ -455,7 +465,7 @@ footer .copy {
 	}
 
 	.nav.active .hamburguer::after {
-		
+
 		background: var(--verdeClaro);
 		transform: rotate(-135deg);
 		top: -0.4375rem;

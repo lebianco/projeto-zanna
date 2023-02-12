@@ -3,7 +3,7 @@ const btnMenu = document.querySelector(".btn-menu");
 const menu = document.querySelector(".nav-list");
 let slideFirst = document.querySelector(".slide.first");
 let btnLab = document.querySelectorAll(".manual-btn");
-var slideDesc = document.querySelectorAll(".desc-proj");
+let slideDesc = document.querySelectorAll(".desc-proj");
 
 
 
