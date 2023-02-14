@@ -61,7 +61,7 @@ header a img {
 
 .nav-list {
 	list-style: none;
-	transform: translate(60rem);
+	transform: translate(65rem);
 	transition: all 0.5s;
 }
 
@@ -137,6 +137,7 @@ menu {
 main {
 	width: 85%;
 	margin: auto;
+	background-color: white;
 }
 
 
@@ -186,8 +187,8 @@ section img {
 }
 
 .slider {
-	transform: translate(40%, -9%);
-	width: 75%;
+	transform: translate(24%, -10%);
+	width: 85%;
 	height: 35rem;
 	margin: 4rem 0rem;
 	overflow: hidden;
@@ -223,14 +224,15 @@ section img {
 .manual-btn {
 	background-color: var(--nude);
 	margin-top: 1rem;
-	padding: 5px;
+	padding: 6px;
 	border-radius: 10px;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 
 .manual-btn.ativo {
 	background-color: var(--verde);
-	padding: 6px;
+	padding: 8px;
 }
 
 .manual-btn {
@@ -295,7 +297,7 @@ section img {
 }
 
 .sess-sociais ul {
-	text-align: right;
+	text-align: center;
 	list-style: none;
 	margin: 1rem;
 	padding: 1rem;
@@ -360,6 +362,10 @@ footer {
 
 .contato-escritorio a:hover {
 	color: var(--verdeClaro);
+}
+
+.ultimos-post {
+	margin-top: 13rem;
 }
 
 footer ul {
