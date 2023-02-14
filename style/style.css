@@ -433,6 +433,18 @@ footer .copy {
 	margin-top: -4px;
 }
 
+.sobre-fotos {
+	display: flex;
+	width: 96vw;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.sobre-fotos img {
+	max-width: 40rem;
+	padding: 1rem;
+}
 
 @media (max-width: 600px) {
 
@@ -615,6 +627,15 @@ footer .copy {
 
 	.social-midia {
 		margin: 1rem 0rem;
+	}
+
+	.sobre-fotos {
+		flex-direction: column;
+	}
+
+	.sobre-fotos img {
+		max-width: 20rem;
+		padding: 1rem;
 	}
 
 }
