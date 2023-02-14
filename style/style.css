@@ -54,8 +54,8 @@ header>nav {
 }
 
 
-header img {
-	max-width: 10rem;
+header a img {
+	max-width: 9rem;
 }
 
 
@@ -343,7 +343,7 @@ footer {
 	align-items: center;
 }
 
-.social-midia>img {
+.social-midia a img {
 	max-width: 9rem;
 }
 
