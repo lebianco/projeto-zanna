@@ -686,4 +686,18 @@ footer .copy {
 		margin-left: 1rem;
 	}
 
+	.section-projetos {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 94vw;
+		margin-left: 0.5rem;
+	}
+
+	.galeria-imagens {
+		column-count: 1;
+		width: 80%;
+	}
+
 }
