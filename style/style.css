@@ -149,6 +149,9 @@ main p {
 	font-weight: 400;
 }
 
+.tx-ce {
+	text-align: center;
+}
 
 .descrição-escritorio {
 	width: 80%;
@@ -511,6 +514,10 @@ footer .copy {
 	text-decoration: none;
 	font-size: 2rem;
 	font-weight: 900;
+}
+
+.sec-prop {
+	margin-bottom: 3rem;
 }
 
 @media (max-width: 600px) {
