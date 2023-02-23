@@ -496,7 +496,7 @@ footer .copy {
 	border-radius: 5px;
 	position: absolute;
 	width: 100%;
-	height: 99.5%;
+	height: 98.5%;
 	opacity: 0;
 	transition: ease-in-out 0.3s;
 }
@@ -506,7 +506,7 @@ footer .copy {
 	cursor: pointer;
 }
 
-.descricao-imagens a {
+.conteiner-galeria a {
 	color: var(--nude);
 	text-decoration: none;
 	font-size: 2rem;
