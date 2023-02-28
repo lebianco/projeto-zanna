@@ -793,4 +793,15 @@ footer .copy {
 		width: 80%;
 	}
 
+	.sec-prop {
+		margin-left: 1em;
+	}
+
+	.sec-prop form {
+		margin: 0;
+	}
+
+	.servico {
+		flex-direction: column;
+	}
 }
