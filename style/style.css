@@ -765,6 +765,10 @@ footer .copy {
 		margin: 1rem 0rem;
 	}
 
+	.conteiner-sobre {
+		flex-direction: column;
+	}
+
 	.sobre-fotos {
 		width: 97vw;
 		flex-direction: column;
