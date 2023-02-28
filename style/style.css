@@ -795,6 +795,7 @@ footer .copy {
 	.galeria-imagens {
 		column-count: 1;
 		width: 80%;
+		margin-left: auto;
 	}
 
 	.sec-prop {
