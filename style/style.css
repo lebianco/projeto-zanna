@@ -534,6 +534,25 @@ footer .copy {
 	margin-bottom: 1rem;
 }
 
+.sec-prop-botao {
+	width: 10em;
+	height: 3em;
+	border-radius: 20px;
+	background-color: white;
+	border: 1.5px solid rgba(128, 128, 128, 0.178);
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+
+.sec-prop-botao:hover {
+	background-color: var(--verde);
+	color: var(--nudeClaro);
+}
+
+.sec-prop-botao:not(:first-child) {
+	margin-left: 5em;
+}
+
 .servico {
 	display: flex;
 	justify-content: space-between;
@@ -550,14 +569,15 @@ footer .copy {
 
 .formulario {
 	width: 100%;
+	padding: .5em;
 	border: 0;
 	border-bottom: 1.5px solid rgba(128, 128, 128, 0.178);
 	outline: 0;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s all;
 }
 
 .formulario:focus {
-	border-bottom: 1.5px solid var(--verdeClaro);
+	border-bottom: 1.5px solid var(--verde);
 }
 
 
