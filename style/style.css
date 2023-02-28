@@ -527,11 +527,19 @@ footer .copy {
 
 .sec-prop form {
 	margin: auto;
-	width: 70%;
+	width: 90%;
 }
 
 .sec-prop form p {
 	margin-bottom: 1rem;
+}
+
+
+
+.servico {
+	display: flex;
+	justify-content: space-between;
+
 }
 
 .obrigado {
